@@ -28,6 +28,87 @@
   color: #61dafb;
 }
 
+.header__navbar{
+  float: left;
+  width: 54%;
+  display: flex;
+
+}
+
+.hearder_navbar-list {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.hearder_navbar-item {
+  display: inline-block;
+  font-size: 14px;
+}
+
+.header {
+  height: 40px;
+  width: 65vw;
+  margin: 0 auto;
+}
+
+.hearder_navbar-item--menu{
+  line-height: 30px;
+}
+
+.iconThreeDot{
+  background-image: url("./images/ic_more_new.png");  
+  background-repeat: no-repeat;
+  background-position-y: 16px;
+  width: 24px;
+  height: 30px;
+}
+
+.hearder_navbar-item--version{
+  width: 96%;
+  margin-top: 2px;
+}
+
+.header__menuselect{
+  float: left;
+}
+
+.header__menuselect-search{
+  background-image: url("./images/icon-repeat.png");
+  background-repeat: no-repeat;
+
+  width: 24px;
+  height: 20px;
+}
+
+.header__menuselect-headphone{
+  background-image: url("./images/icon-repeat.png");
+  background-repeat: no-repeat;
+
+  width: 24px;
+  height: 50px;
+
+  background-position-y: -2238px;
+}
+
+.header__menuselect-list{
+  list-style: none;
+}
+.header-menuselect-item{
+  display: inline-block;
+}
+.header__menuselect-vip{
+  text-decoration: none;
+  color: #FFC40E;
+  border: 1px solid #FFC40E;
+  padding: 8px 10px;
+  border-radius: 30px;
+  font-size: 10px;
+  font-weight: bold;
+  background: rgba(255, 196, 14, 0.1);
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
