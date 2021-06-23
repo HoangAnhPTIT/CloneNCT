@@ -28,11 +28,10 @@
   color: #61dafb;
 }
 
-.header__navbar{
+.header__navbar {
   float: left;
   width: 54%;
   display: flex;
-
 }
 
 .hearder_navbar-list {
@@ -46,67 +45,93 @@
   display: inline-block;
   font-size: 14px;
 }
+.subMenu{
+  border-bottom: #dadada solid 1px;
 
+}
 .header {
-  height: 40px;
+  height: 70px;
   width: 65vw;
   margin: 0 auto;
 }
 
-.hearder_navbar-item--menu{
+.hearder_navbar-item--menu {
   line-height: 30px;
 }
 
-.iconThreeDot{
-  background-image: url("./images/ic_more_new.png");  
+.iconThreeDot {
+  background-image: url("./images/ic_more_new.png");
   background-repeat: no-repeat;
   background-position-y: 16px;
   width: 24px;
   height: 30px;
 }
 
-.hearder_navbar-item--version{
+.hearder_navbar-item--version {
   width: 96%;
   margin-top: 2px;
 }
 
-.header__menuselect{
+.header__menuselect {
   float: left;
 }
 
-.header__menuselect-search{
-  background-image: url("./images/icon-repeat.png");
+.header__menuselect-search {
+  background-image: url("./images/ic_search_icon.png");
   background-repeat: no-repeat;
-
-  width: 24px;
-  height: 20px;
+  background-size: 60%;
+  width: 40px;
+  height: 40px;
 }
 
-.header__menuselect-headphone{
-  background-image: url("./images/icon-repeat.png");
+.header__menuselect-headphone {
+  background-image: url("./images/ic_head.png");
   background-repeat: no-repeat;
-
-  width: 24px;
-  height: 50px;
-
-  background-position-y: -2238px;
+  background-size: 60%;
+  width: 40px;
+  height: 40px;
+}
+.header__menuselect-upload {
+  background-image: url("./images/ic_cloud.png");
+  background-repeat: no-repeat;
+  background-size: 60%;
+  width: 40px;
+  height: 40px;
 }
 
-.header__menuselect-list{
+.header__menuselect-coins {
+  background-image: url("./images/ic_decor_ncoin.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 40px;
+  height: 40px;
+}
+.header__menuselect-list {
   list-style: none;
+  display: flex;
 }
-.header-menuselect-item{
+.header-menuselect-item {
   display: inline-block;
+  padding-right: 15px;
 }
-.header__menuselect-vip{
+.header__menuselect-vip {
   text-decoration: none;
-  color: #FFC40E;
-  border: 1px solid #FFC40E;
+  color: #ffc40e;
+  border: 1px solid #ffc40e;
   padding: 8px 10px;
   border-radius: 30px;
   font-size: 10px;
   font-weight: bold;
   background: rgba(255, 196, 14, 0.1);
+}
+.header-menuselect-item--vip{
+  margin-top: 5px;
+}
+.header__menuselect--shadow {
+  cursor: pointer;
+  border-radius: 20px;
+  background-position: center;
+  background-color: #f2f2f2;
 }
 
 @keyframes App-logo-spin {
