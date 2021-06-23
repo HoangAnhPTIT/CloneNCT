@@ -1,17 +1,31 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 class CategoryMusic extends Component {
+  constructor(props) {
+    super(props);
+  }
+
   render() {
+    const listCategory = this.props.dataCategoryMusic;
+    console.log(listCategory);
+    const items = [];
+    let index = 0;
+    for (const country in listCategory) {
+
+      items.push( 
+        <ul>
+          {listCategory[country].map((element) => {
+            index++;
+            console.log(index);
+            <li key={index}>{element}</li>;
+          })}
+        </ul>
+      );
+    }
+
     return (
-      <div className="dropdown-menu">
-        <table>
-          <tr>
-            <th>VIỆT NAM</th>
-            <th>ÂU MỸ</th>
-            <th>CHÂU Á</th>
-            <th>KHÁC</th>
-          </tr>
-        </table>
+      <div className="dropdown-menu-category">
+        {items}
       </div>
     );
   }
