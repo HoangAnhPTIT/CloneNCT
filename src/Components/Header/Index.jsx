@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ListMenu from "./ListMenu";
-
+import nologin from "../../images/nologin_user.png"
+import arrowDown from "../../images/arrow_down.png"
 const listName = [
   "Bài hát",
   "Playlist",
@@ -45,6 +46,13 @@ class Header extends Component {
                 <a href="">
                   <div className="header__menuselect-coins"></div>
                 </a>
+              </li>
+              <li className="hearder_navbar-item">
+                <div className="hearder_navbar-item-login">
+                  <img className="hearder_navbar-item-login-img" src={nologin} alt="" />
+                  <b className="hearder_navbar-item-text-login">Đăng nhập</b>
+                  <img className="hearder_navbar-item-arrow-down" src={arrowDown} alt="" />
+                </div>
               </li>
             </ul>
           </div>
