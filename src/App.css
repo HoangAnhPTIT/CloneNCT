@@ -142,3 +142,64 @@
     transform: rotate(360deg);
   }
 }
+
+.menu-list-0,.menu-list-1,.menu-list-2,.menu-list-3,.menu-list-4,.menu-list-5, .menu-list-6 {
+  display: none;
+  position: absolute;
+  height: 340px;
+  width: 510px;
+  color: black;
+}
+
+.hearder_navbar-item-dropdown-category{
+  background: #fff;
+  border: 1px solid #d9d9d9;
+  padding: 10px;
+  box-shadow: 0 3px 8px rgb(3 3 3 / 26%);
+  top: 68px;
+}
+
+.menu-item-0:hover, .menu-item-1:hover, .menu-item-2:hover, .menu-item-3:hover, .menu-item-4:hover, .menu-item-5:hover, .menu-item-6:hover{
+  color: #2daaed;
+}
+
+.menu-item-0:hover .menu-list-0{
+  display: block;
+}
+
+.menu-item-1:hover .menu-list-1{
+  display: block;
+}
+
+.menu-item-2:hover .menu-list-2{
+  display: block;
+}
+
+.menu-item-3:hover .menu-list-3{
+  display: block;
+}
+
+.menu-item-4:hover .menu-list-4{
+  display: block;
+}
+
+.menu-item-5:hover .menu-list-5{
+  display: block;
+}
+.menu-item-6:hover .menu-list-6{
+  display: block;
+}
+
+.list-category{
+  list-style: none;
+    padding: 0;
+    float: left;
+    margin-right: 20px;
+
+}
+.list-category>li:first-child{
+  font-weight: bold;
+}
+.list-category>li{
+  padding-top: 4px;
+}
