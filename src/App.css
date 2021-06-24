@@ -30,21 +30,23 @@
 
 .header__navbar {
   float: left;
-  width: 54%;
-  display: flex;
+  width: 60%;
+  height: 70px;
 }
 
 .hearder_navbar-list {
   list-style: none;
-  display: flex;
-  justify-content: space-between;
   width: 100%;
+  height: 70px;
+  padding-left: unset;
 }
 
 .hearder_navbar-item {
   display: inline-block;
   font-size: 14px;
-  width: 150px;
+  float: left;
+  padding-right: 20px;
+  padding-bottom: 24px;
 }
 
 .subMenu {
@@ -83,6 +85,7 @@
   background-size: 60%;
   width: 35px;
   height: 35px;
+  float:left
 }
 
 .header__menuselect-headphone {
@@ -110,6 +113,7 @@
 .header__menuselect-list {
   list-style: none;
   display: flex;
+  padding: 0;
 }
 .header-menuselect-item {
   display: inline-block;
@@ -174,6 +178,7 @@
 .menu-item-5:hover,
 .menu-item-6:hover {
   color: #2daaed;
+  cursor: pointer;
 }
 
 .menu-item-0:hover .menu-list-0 {
@@ -218,11 +223,13 @@
 
 .hearder_navbar-item-login {
   position: relative;
+  width: 150px;
+  transform: translate(10px, 2px);
 }
 
 .hearder_navbar-item-login-img {
   width: 35px;
-  border-radius: 16px;
+  border-radius: 20px;
 }
 
 .hearder_navbar-item-text-login {
@@ -237,4 +244,26 @@
   position: absolute;
   left: 118px;
   top: 14px;
+}
+
+.hearder_navbar-item-cluser{
+  background: #F2F2F2;
+  padding: 4px 0px;
+  transform: translateY(-4px);
+  border-radius: 24px;  
+}
+.header-menuselect-item--hidden{
+  display: none;
+}
+
+.header-menuselect-item-input-search{
+  display: none;
+}
+
+.onFocusSearch{
+  display: block;
+}
+
+.header-menuselect-item-input-search{
+
 }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import ListMenu from "./ListMenu";
-import nologin from "../../images/nologin_user.png"
-import arrowDown from "../../images/arrow_down.png"
+import nologin from "../../images/nologin_user.png";
+import arrowDown from "../../images/arrow_down.png";
 const listName = [
   "Bài hát",
   "Playlist",
@@ -15,7 +15,21 @@ const listName = [
 class Header extends Component {
   constructor(props) {
     super(props);
+    this.state = {
+      searchClass: "",
+      hiddenClass: "",
+    };
+
+    this.changeClassSearch = this.changeClassSearch.bind(this);
   }
+
+  changeClassSearch = () => {
+    this.setState({
+      searchClass: this.state.searchClass === "" ? "onFocusSearch" : "",
+      hiddenClass:
+        this.state.hiddenClass === "" ? "header-menuselect-item--hidden" : "",
+    });
+  };
 
   render() {
     return (
@@ -31,27 +45,59 @@ class Header extends Component {
                   NÂNG CẤP VIP
                 </a>
               </li>
-              <li class="header-menuselect-item">
-                <div className="header__menuselect-search header__menuselect--shadow"></div>
+              <li className="header-menuselect-item">
+                <div
+                  className={
+                    "header__menuselect-search header__menuselect--shadow "
+                  }
+                  onClick={this.changeClassSearch}
+                ></div>
+                <input
+                  className={
+                    "header-menuselect-item-input-search " +
+                    this.state.searchClass
+                  }
+                  type="text"
+                  placeholder="Tìm bài hát, ca sĩ, playlist"
+                />
               </li>
-              <li class="header-menuselect-item">
+              <li
+                className={"header-menuselect-item " + this.state.hiddenClass}
+              >
                 <a href="">
                   <div className="header__menuselect-headphone header__menuselect--shadow"></div>
                 </a>
               </li>
-              <li class="header-menuselect-item">
+              <li
+                className={"header-menuselect-item " + this.state.hiddenClass}
+              >
                 <div className="header__menuselect-upload header__menuselect--shadow"></div>
               </li>
-              <li class="header-menuselect-item">
+              <li
+                className={"header-menuselect-item " + this.state.hiddenClass}
+              >
                 <a href="">
                   <div className="header__menuselect-coins"></div>
                 </a>
               </li>
-              <li className="hearder_navbar-item">
+              <li
+                className={
+                  "hearder_navbar-item hearder_navbar-item-cluser " +
+                  this.state.hiddenClass
+                }
+              >
                 <div className="hearder_navbar-item-login">
-                  <img className="hearder_navbar-item-login-img" src={nologin} alt="" />
+                  <img
+                    className="hearder_navbar-item-login-img"
+                    src={nologin}
+                    alt=""
+                  />
                   <b className="hearder_navbar-item-text-login">Đăng nhập</b>
-                  <img className="hearder_navbar-item-arrow-down" src={arrowDown} alt="" />
+                  <img
+                    className="hearder_navbar-item-arrow-down"
+                    src={arrowDown}
+                    alt=""
+                  />
                 </div>
               </li>
             </ul>
