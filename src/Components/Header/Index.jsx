@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import ListMenu from "./ListMenu";
 import nologin from "../../images/nologin_user.png";
 import arrowDown from "../../images/arrow_down.png";
+import BoxLogin from "./BoxLogin"
 const listName = [
   "Bài hát",
   "Playlist",
@@ -18,9 +19,11 @@ class Header extends Component {
     this.state = {
       searchClass: "",
       hiddenClass: "",
+      areaLoginHover: ""
     };
 
     this.changeClassSearch = this.changeClassSearch.bind(this);
+
   }
 
   changeClassSearch = () => {
@@ -88,19 +91,25 @@ class Header extends Component {
                     this.state.hiddenClass
                   }
                 >
-                  <div className="hearder_navbar-item-login">
-                    <img
-                      className="hearder_navbar-item-login-img"
-                      src={nologin}
-                      alt=""
-                    />
-                    <b className="hearder_navbar-item-text-login">Đăng nhập</b>
-                    <img
-                      className="hearder_navbar-item-arrow-down"
-                      src={arrowDown}
-                      alt=""
-                    />
+                  <div className="hearder_navbar-item-login-wrap">
+                    <div className="form-login">
+                      <div className="hearder_navbar-item-login">
+                        <img
+                          className="hearder_navbar-item-login-img"
+                          src={nologin}
+                          alt=""
+                        />
+                        <b className="hearder_navbar-item-text-login">Đăng nhập</b>
+                        <img
+                          className="hearder_navbar-item-arrow-down"
+                          src={arrowDown}
+                          alt=""
+                        />
+                      </div>
+                    </div>
                   </div>
+                  < BoxLogin />
+
                 </li>
               </div>
             </ul>
