@@ -14,10 +14,6 @@ function createUl(data) {
   return items;
 }
 class CategoryMusic extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     const dataCategory = this.props.dataCategory;
     const classN = this.props.classN;
