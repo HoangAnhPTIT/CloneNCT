@@ -257,7 +257,7 @@
   top: 14px;
 }
 
-.hearder_navbar-item-login-wrap{
+.hearder_navbar-item-login-wrap {
   background: #F2F2F2;
   padding: 2px 0px;
   border-radius: 24px;
@@ -329,11 +329,11 @@
   border: 1px solid #d9d9d9;
 }
 
-.hearder_navbar-item-cluser:hover{
+.hearder_navbar-item-cluser:hover {
   cursor: pointer;
 }
 
-.hearder_navbar-item-cluser:hover .hearder_navbar-item-login-box{
+.hearder_navbar-item-cluser:hover .hearder_navbar-item-login-box {
   display: block;
 }
 
@@ -345,4 +345,208 @@
 
 .hearder_navbar-item-login-box-singin {
   padding-top: 10px;
+}
+
+.singin_popup {
+  width: 800px;
+  box-shadow: 1px 1px 6px #333;
+  border-radius: 4px;
+  position: fixed;
+  top: 12%;
+  left: 20%;
+}
+
+.singin_popup-title {
+  padding: 12px 0 12px 25px;
+  border-bottom: 1px solid #dadada;
+}
+
+.singin-popup-form {
+  width: 510px;
+  padding-right: 10px;
+  border-right: 1px solid #dadada;
+  margin-top: 20px;
+  position: relative;
+  float: left;
+}
+
+.singin_popup_form--float-right {
+  float: right;
+  margin-right: 30px;
+  padding-top: 20px;
+  position: relative;
+}
+
+.singin-popup-form-input {
+  padding: 8px 120px 8px 5px;
+  margin-left: 22px;
+  border: 1px solid #dadada;
+  border-radius: 3px;
+}
+
+.singin-popup-form-input.singin-popup-form-input--invalid--display {
+  background-color: #ffeaea;
+  border: 1px solid red;
+}
+
+.singin-popup-form-input.singin-popup-form-inputpw--invalid--display {
+  background-color: #ffeaea;
+  border: 1px solid red;
+}
+
+.singin-popup-form-input.singin-popup-form-input--invalid--email {
+  background-color: #ffeaea;
+  border: 1px solid red;
+}
+
+.singin-popup-form-input:focus {
+  outline: none;
+}
+
+.singin_popup_form--float-right--required {
+  color: red;
+  font-size: 10px;
+  position: absolute;
+}
+
+.singin_popup_form--float-right-label {
+  font-size: 12px;
+}
+
+.singin_popup_form--float-right--p {
+  font-size: 12px;
+  color: #b0b0b0
+}
+
+.span-required {
+  color: red
+}
+
+.singin_popup_form--float-right.singin_popup_form--float-right--no-top {
+  padding-top: unset
+}
+
+.singin_popup_form-register {
+  margin-top: 20px;
+  display: inline-flex;
+  font-size: 12px;
+  margin-left: 175px;
+}
+
+.singin_popup_form-register-text-check {
+  margin: unset;
+}
+
+.singin_popup_form-register-deal {
+  color: #0689ba;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.singin_popup_form-register-deal:hover {
+  text-decoration: underline;
+}
+
+.singin_popup_form-register-checkbox {
+  margin: 0 4px 0 0;
+}
+
+.singin_popup_form-action {
+  background-color: #2582be;
+  width: 308px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 13px;
+  text-transform: uppercase;
+  margin: 20px 0 20px 174px
+}
+
+.popup-regiter-area-login--text {
+  text-align: center;
+  font-size: 13px;
+  margin-top: 30px;
+}
+
+.popup-regiter-area-login--login-now {
+  text-align: center;
+  background-color: #e74c3c;
+  text-decoration: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 45px;
+  border-radius: 5px;
+  position: absolute;
+  right: 23px;
+  top: 100px;
+}
+
+.popup-regiter-area-login-box-like-or--solid {
+  width: 28%;
+  height: 1px;
+  position: absolute;
+  right: 25px;
+  top: 175px;
+  background-color: #dadada;
+}
+
+.popup-regiter-area-login-box-like-or--text {
+  background: white;
+  position: absolute;
+  top: 167px;
+  right: 105px;
+  padding-right: 10px;
+  padding-left: 10px;
+  font-size: 14px;
+}
+
+.singin-popup-form-input--invalid {
+  color: red;
+  font-size: 13px;
+  margin-left: 102px;
+  margin-top: 5px;
+  display: none;
+}
+
+.singin-popup-form-inputpw--invalid {
+  color: red;
+  font-size: 13px;
+  margin-left: 76px;
+  margin-top: 5px;
+  display: none;
+}
+
+.singin-popup-form-inputrepw--invalid {
+  color: red;
+  font-size: 13px;
+  margin-left: 120px;
+  margin-top: 5px;
+  display: none;
+}
+
+
+.singin-popup-form-input--invalid-email-text {
+  color: red;
+  font-size: 13px;
+  margin-left: 53px;
+  margin-top: 5px;
+  display: none;
+}
+
+.singin-popup-form-input--invalid.singin-popup-form-input--invalid--display {
+  display: block;
+}
+
+.singin-popup-form-inputpw--invalid.singin-popup-form-inputpw--invalid--display {
+  display: block;
+}
+
+.singin-popup-form-inputrepw--invalid.singin-popup-form-inputrepw--invalid--display {
+  display: block;
+}
+
+.singin-popup-form-input--invalid-email-text.singin-popup-form-input--invalid--email {
+  display: block;
 }
