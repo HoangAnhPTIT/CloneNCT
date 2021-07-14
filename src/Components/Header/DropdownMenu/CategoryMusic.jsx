@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 
 function createUl(data) {
   const items = [];
@@ -13,12 +13,8 @@ function createUl(data) {
   }
   return items;
 }
-class CategoryMusic extends Component {
-  render() {
-    const dataCategory = this.props.dataCategory;
-    const classN = this.props.classN;
-    return <div className={classN}>{createUl(dataCategory)}</div>;
-  }
+export default function CategoryMusic(props) {
+  const dataCategory = props.dataCategory;
+  const classN = props.classN;
+  return <div className={classN}>{createUl(dataCategory)}</div>;
 }
-
-export default CategoryMusic;

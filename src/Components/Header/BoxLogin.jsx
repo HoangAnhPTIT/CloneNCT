@@ -1,15 +1,16 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { clickBtnRegister } from '../../feature/register/registerSlice';
 
-class BoxLogin extends Component {
-  render() {
-    return (
-      <div className='hearder_navbar-item-login-box '>
-        <div className='hearder_navbar-item-login-box-login'>Dang Nhap</div>
-        <div className='hearder_navbar-item-login-box-singin'>Dang Ky</div>
+import { useDispatch } from 'react-redux'
 
-      </div>
-    );
-  }
+
+export default function BoxLogin() {
+  const dispatch = useDispatch()
+  return (
+    <div className='hearder_navbar-item-login-box '>
+      <div className='hearder_navbar-item-login-box-login'>Dang Nhap</div>
+      <div onClick={() => dispatch(clickBtnRegister())} className='hearder_navbar-item-login-box-singin'>Dang Ky</div>
+
+    </div>
+  );
 }
-
-export default BoxLogin;

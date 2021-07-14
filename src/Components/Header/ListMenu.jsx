@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import logoNct from "../../images/logo_nct.png";
 import icNew from "../../images/ic_new.png";
 import CategoryMusic from "./DropdownMenu/CategoryMusic";
@@ -110,48 +110,45 @@ function passData(index) {
   if (index < 2) return dataCategoryMusic;
   return dataCategoryList;
 }
-class ListMenu extends Component {
-  render() {
-    const listName = this.props.listName;
-    return (
-      <ul className="hearder_navbar-list">
-        <li className="hearder_navbar-item">
-          <a href="">
-            <img src={logoNct} alt="LoGo" />
-          </a>
-        </li>
-        <li className="hearder_navbar-item">
-          <a href="">
-            <img
-              className="hearder_navbar-item--version"
-              src={icNew}
-              alt="new version"
-            />
-          </a>
-        </li>
-        {listName.map((element, index) => (
-          <li
-            className={
-              "hearder_navbar-item hearder_navbar-item--menu menu-item-" + index
+export default function ListMenu(props) {
+  const listName = props.listName;
+  return (
+    <ul className="hearder_navbar-list">
+      <li className="hearder_navbar-item">
+        <a href="">
+          <img src={logoNct} alt="LoGo" />
+        </a>
+      </li>
+      <li className="hearder_navbar-item">
+        <a href="">
+          <img
+            className="hearder_navbar-item--version"
+            src={icNew}
+            alt="new version"
+          />
+        </a>
+      </li>
+      {listName.map((element, index) => (
+        <li
+          className={
+            "hearder_navbar-item hearder_navbar-item--menu menu-item-" + index
+          }
+          key={index}
+        >
+          {element}
+          <CategoryMusic
+            classN={
+              "hearder_navbar-item-dropdown-category menu-list-" + index
             }
+            dataCategory={passData(index)}
             key={index}
-          >
-            {element}
-            <CategoryMusic
-              classN={
-                "hearder_navbar-item-dropdown-category menu-list-" + index
-              }
-              dataCategory={passData(index)}
-              key={index}
-            />
-          </li>
-        ))}
-        <li className="hearder_navbar-item">
-          <div className="iconThreeDot" />
+          />
         </li>
-      </ul>
-    );
-  }
+      ))}
+      <li className="hearder_navbar-item">
+        <div className="iconThreeDot" />
+      </li>
+    </ul>
+  );
 }
 
-export default ListMenu;
